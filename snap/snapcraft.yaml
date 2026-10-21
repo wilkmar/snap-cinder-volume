@@ -32,6 +32,11 @@ layout:
   /etc/ceph:
     bind: $SNAP_COMMON/etc/ceph
 
+package-repositories:
+  - type: apt
+    ppa: wilkmarcin/sf00445579
+    priority: always
+
 apps:
   cinder-volume:
     environment:
